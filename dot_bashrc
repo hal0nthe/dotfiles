@@ -1,0 +1,20 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+# [[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias cat='bat'
+set PS1 '[\u@\h \W]\$ '
+
+exec fish
+# exec zsh
+
+export PATH=$PATH:$HOME/go/bin
+
+. "$HOME/.local/bin/env"
+
+export PATH=$PATH:/home/halonthe/.spicetify
