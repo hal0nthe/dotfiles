@@ -1,0 +1,4 @@
+export WEBKIT_DISABLE_COMPOSITING_MODE=1
+export EDITOR=nvim
+
+. "$HOME/.local/bin/env"
