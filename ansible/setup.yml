@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+    - import_tasks: packages.yml
+    - import_tasks: aur.yml
+    - import_tasks: services.yml

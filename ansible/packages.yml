@@ -1,0 +1,77 @@
+---
+- name: Install official packages
+  community.general.pacman:
+    name:
+      # System
+      - btop
+      - cava
+      - thunar
+      - yazi
+      - fastfetch
+      - fzf
+      - unzip
+      - git
+      - jq
+      - rofi
+      - fish
+      - tmux
+      - swaync
+      - swayimg
+
+      # Theming
+      - nwg-look
+      - matugen
+      - awww
+      - waybar
+
+      # Programming
+      - go
+      - python
+      - rust
+      - nodejs
+      - npm
+      - gcc
+      - clang
+      - neovim
+
+      # Apps
+      - obs-studio
+      - obsidian
+
+      # Media
+      - vlc
+      - mpv
+      - mpd
+      - rmpc
+
+      # Gaming
+      - steam
+      - gamescope
+      - goverlay
+      - mangohud
+
+      # Hyprland
+      - hyprlock
+      - hypridle
+
+      # Extra utilities
+      - wl-clipboard
+      - grim
+      - slurp
+      - network-manager-applet
+      - pavucontrol
+      - bluez
+      - bluez-utils
+      - blueman
+      - brightnessctl
+      - playerctl
+      - imagemagick
+      - pipewire
+      - wiremix
+      - wireplumber
+      - xdg-desktop-portal-hyprland
+      - noto-fonts
+      - noto-fonts-emoji
+      - ttf-jetbrains-mono-nerd
+
+    state: present

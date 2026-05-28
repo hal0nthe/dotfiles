@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "==============================="
+echo " HYPRLAND BOOTSTRAP STARTING "
+echo "==============================="
+
+# Update system
+sudo pacman -Syu --noconfirm
+
+# Install required packages
+sudo pacman -S --needed --noconfirm \
+  git \
+  base-devel \
+  curl \
+  wget \
+  unzip
+
+# Install paru if not installed
+if ! command -v paru &>/dev/null; then
+  echo "Installing paru..."
+
+  git clone https://aur.archlinux.org/paru.git /tmp/paru
+  cd /tmp/paru
+  makepkg -si --noconfirm
+fi
+
+# Run ansible
+ansible-galaxy collection install community.general
+ansible-galaxy collection install kewlfft.aur
+ansible-playbook ~/.local/share/chezmoi/ansible/setup.yml --ask-become-pass
+
+# Apply chezmoi config
+chezmoi apply
+
+# Change default shell to fish
+if command -v fish &>/dev/null; then
+  chsh -s $(which fish)
+fi
+
+# Install Oh My Fish
+if [ ! -d "$HOME/.local/share/omf" ]; then
+  curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+fi
+
+# Install TPM
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+# Enable services
+systemctl --user enable mpd.service
+systemctl --user start mpd.service
+
+# Final message
+clear
+
+echo "==============================="
+echo " BOOTSTRAP FINISHED "
+echo "==============================="

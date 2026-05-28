@@ -1,0 +1,13 @@
+---
+- name: Install AUR packages
+  kewlfft.aur.aur:
+    use: paru
+    name:
+      - zen-browser-bin
+      - vesktop-bin
+      - localsend-bin
+      - spotify
+      - spicetify-cli
+      - adwsteamgtk
+      - heroic-games-launcher-bin
+      - protonplus

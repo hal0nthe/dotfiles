@@ -1,0 +1,20 @@
+---
+- name: Enable bluetooth
+  systemd:
+    name: bluetooth.service
+    enabled: true
+
+- name: Start bluetooth
+  systemd:
+    name: bluetooth.service
+    state: started
+
+- name: Enable NetworkManager
+  systemd:
+    name: NetworkManager.service
+    enabled: true
+
+- name: Start NetworkManager
+  systemd:
+    name: NetworkManager.service
+    state: started
