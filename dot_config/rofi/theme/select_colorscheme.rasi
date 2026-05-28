@@ -1,0 +1,5 @@
+@import "~/.config/rofi/theme/select_waybar.rasi"
+
+entry {
+  placeholder: "Choose Color Scheme";
+}

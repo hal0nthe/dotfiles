@@ -1,0 +1,19 @@
+@import "~/.config/rofi/config.rasi" 
+
+/* ---- Window ---- */
+window {
+  width: 50%;
+}
+
+/* ---- Entry ---- */
+entry {
+  width: 45%;
+  placeholder: "💫 Search Emoji's  **note** 👀 Click or Return to choose | Ctrl V to Paste";
+}
+
+/* ---- Listview ---- */
+listview {
+  columns: 1;
+  lines: 7;
+  scrollbar: true;
+}
