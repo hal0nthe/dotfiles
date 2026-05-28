@@ -1,0 +1,10 @@
+require('configs.monitors')
+require('configs.keybinds')
+require('configs.autostart')
+require('configs.env')
+require('configs.looknfeel')
+require('configs.layout')
+require('configs.misc')
+require('configs.inputs')
+require('configs.windowrules')
+
