@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1763008058780018-1</unique-id>
+	<command>kitty --class term-popup %f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>video-x-generic</icon>
+	<name>Media Info</name>
+	<submenu></submenu>
+	<unique-id>1779548385703206-1</unique-id>
+	<command>kitty --class term-popup --hold ffprobe -hide_banner %f</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<video-files/>
+</action>
+</actions>
