@@ -1,0 +1,42 @@
+sw_volume: 55
+audio_device_state:1:PipeWire Sound Server
+audio_device_state:1:my_fifo
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:01 Peterpan - Walau Habis Terang.mp3
+1:01 Reuni.mp3
+2:02 Keep Being You.mp3
+3:02 Dia.mp3
+4:02 Ingin Hilang Ingatan.mp3
+5:02 Ingin Hilang Ingatan(1).mp3
+6:03 Hampa.mp3
+7:03 Jangan Dulu Tenggelam.mp3
+8:03 Bungaku.mp3
+9:03 Cinta Dan Rahasia (feat. Glenn Fr.mp3
+10:04 Peterpan - Mungkin Nanti.mp3
+11:04 Hitam Putih Dunia.mp3
+12:05 Hari Untukmu.mp3
+13:05 Special Buat Kamu.mp3
+14:06 Cintailah Aku Sepenuh Hati.mp3
+15:06 Peterpan - Semua Tentang Kita.mp3
+16:07 Peterpan - Ada Apa Denganmu.mp3
+17:07 Lagu Rindu.mp3
+18:09 Peterpan - Menghapus Jejakmu.mp3
+19:09 Berawal Dari Tatap.mp3
+20:10 Penjaga Hati.mp3
+21:11 Peterpan - Diatas Normal.mp3
+22:13 Peterpan - Dibalik Awan.mp3
+23:14 Peterpan - Kukatakan Dengan Indah.mp3
+24:22 Peterpan - Khayalan Tingkat Tinggi.mp3
+25:01 Yogyakarta (KLakustik).mp3
+26:02 Terbang.mp3
+27:06. Child.mp3
+playlist_end
