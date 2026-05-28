@@ -1,0 +1,39 @@
+-- This file needs to have same structure as nvconfig.lua
+-- https://github.com/NvChad/ui/blob/v3.0/lua/nvconfig.lua
+-- Please read that file to know all available options :(
+
+---@type ChadrcConfig
+local M = {}
+
+vim.diagnostic.config({
+  virtual_text = false, -- matikan virtual text bawaan
+  underline = true,     -- underline tetap aktif
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = " ",
+      [vim.diagnostic.severity.WARN] = " ",
+      [vim.diagnostic.severity.HINT] = " ",
+      [vim.diagnostic.severity.INFO] = " ",
+    }
+  }
+})
+
+M.base46 = {
+  theme = "everblush",
+  transparency = true,
+
+  -- hl_override = {
+  -- 	Comment = { italic = true },
+  -- 	["@comment"] = { italic = true },
+  -- },
+}
+
+-- M.nvdash = { load_on_startup = true }
+M.ui = {
+  statusline = {
+    theme = "minimal",
+    separator_style = "round",
+  },
+}
+
+return M
