@@ -14,8 +14,8 @@ post_hook = 'hyprctl reload'
 
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty.conf'
-output_path = '~/.config/kitty/colors.conf'
-post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
+output_path = '~/.config/kitty/themes/matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi.rasi'
