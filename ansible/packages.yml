@@ -17,6 +17,8 @@
       - tmux
       - swaync
       - swayimg
+      - qt6-base
+      - qt6-declarative
 
       # Theming
       - nwg-look

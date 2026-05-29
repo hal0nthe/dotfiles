@@ -1,0 +1,22 @@
+version = 2
+
+[global]
+allow_fp16 = true
+dll = "/home/halonthe/.local/share/Steam/steamapps/common/Lossless Scaling/Lossless.dll"
+
+[[profile]]
+active_in = [ "vkcube", "vkcubepp", "HTGame.exe", "NTEGlobalGame.exe" ]
+flow_scale = 0.85
+gpu = "NVIDIA GeForce RTX 5060"
+multiplier = 4
+name = "4x FG / 85% [Performance]"
+pacing = "none"
+performance_mode = true
+
+[[profile]]
+flow_scale = 1.0
+gpu = "NVIDIA GeForce RTX 5060"
+multiplier = 2
+name = "2x FG / 100%"
+pacing = "none"
+performance_mode = false
