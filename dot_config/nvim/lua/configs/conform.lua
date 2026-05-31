@@ -3,8 +3,12 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    py = { "black" },
+    javascript = { "prettier" },
+    javascriptreact = { "prettier" },
+    typescript = { "prettier" },
+    typescriptreact = { "prettier" },
     python = { "black" },
+    rust = { "rustfmt" },
   },
 
   format_on_save = {

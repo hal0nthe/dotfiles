@@ -6,16 +6,9 @@
 local M = {}
 
 vim.diagnostic.config({
-  virtual_text = false, -- matikan virtual text bawaan
-  underline = true,     -- underline tetap aktif
-  signs = {
-    text = {
-      [vim.diagnostic.severity.ERROR] = " ",
-      [vim.diagnostic.severity.WARN] = " ",
-      [vim.diagnostic.severity.HINT] = " ",
-      [vim.diagnostic.severity.INFO] = " ",
-    }
-  }
+  virtual_text = false,
+  signs = true,
+  underline = true,
 })
 
 M.base46 = {

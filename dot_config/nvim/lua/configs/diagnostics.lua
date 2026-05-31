@@ -24,20 +24,6 @@ require("tiny-inline-diagnostic").setup {
   -- List of filetypes to disable the plugin for
   disabled_ft = {},
 
-  signs = {
-    left = "",
-    right = "",
-    diag = "●",
-    arrow = "    ",
-    up_arrow = "    ",
-    vertical = " │",
-    vertical_end = " └",
-  },
-
-  blend = {
-    factor = 0.22,
-  },
-
   options = {
     -- Display the source of diagnostics (e.g., "lua_ls", "pyright")
     show_source = {

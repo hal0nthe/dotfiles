@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
   },
 
@@ -11,7 +11,7 @@ return {
       ensure_installed = {
         "gopls",
       },
-    }
+    },
   },
 
   {
@@ -43,8 +43,6 @@ return {
     priority = 1000,
     config = function()
       require "configs.diagnostics"
-
-      vim.diagnostic.config({ virtual_text = false }) -- Disable Neovim's default virtual text diagnostics
     end,
   },
 
@@ -70,7 +68,7 @@ return {
     end,
   },
 
--- Matugen
+  -- Matugen
   -- {
   --   "matugen-theme",
   --   dir = vim.fn.stdpath("config"),
@@ -82,10 +80,10 @@ return {
   -- },
   --
   {
-  'mrcjkb/rustaceanvim',
+    "mrcjkb/rustaceanvim",
     -- To avoid being surprised by breaking changes,
     -- I recommend you set a version range
-    version = '^9',
+    version = "^9",
     -- This plugin implements proper lazy-loading (see :h lua-plugin-lazy).
     -- No need for lazy.nvim to lazy-load it.
     lazy = false,
@@ -94,14 +92,37 @@ return {
   -- { import = "nvchad.blink.lazyspec" },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
+    "nvim-treesitter/nvim-treesitter",
     lazy = false,
     build = ":TSUpdate",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-       "html", "css", "rust"
-  		},
-  	},
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "rust",
+      },
+    },
+  },
+
+  {
+    "kylechui/nvim-surround",
+    version = "^4.0.0", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    -- Optional: See `:h nvim-surround.configuration` and `:h nvim-surround.setup` for details
+    -- config = function()
+    --     require("nvim-surround").setup({
+    --         -- Put your configuration here
+    --     })
+    -- end
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
+    priority = 1000,
+    opts = require "configs.todocomments",
   },
 }
